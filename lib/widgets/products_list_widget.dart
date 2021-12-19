@@ -27,8 +27,7 @@ class ProductListWidget extends StatelessWidget {
                 ),
               )
             : ListView(children: [
-                ...products.map((prod) =>
-                    SizedBox(height: 700, child: ProductWidget(product: prod)))
+                ...products.map((prod) => ProductWidget(product: prod))
               ]));
   }
 }

@@ -42,7 +42,11 @@ class ProductWidget extends StatelessWidget {
                 const Divider(),
                 Text(product.description!,
                     style: Theme.of(context).textTheme.bodyText1),
-                const Spacer(),
+                MediaQuery.of(context).size.width > 700
+                    ? const Spacer()
+                    : const SizedBox(
+                        height: 10,
+                      ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
