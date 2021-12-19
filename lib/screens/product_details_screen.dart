@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_moc/api_calls.dart';
 import 'package:flutter_application_moc/data_models/product_data_model/product_data_model.dart';
 import 'package:flutter_application_moc/widgets/liked_widget.dart';
+import 'package:my_package/api_calls.dart';
 
 class ProductDetailsScreenArgs {
   final String productId;
@@ -31,7 +31,9 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
   }
 
   void _getProduct() async {
-    isLoading = true;
+    setState(() {
+      isLoading = true;
+    });
     var response = await getProduct(widget.productId);
 
     ProductDataModel parsed =

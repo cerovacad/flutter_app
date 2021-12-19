@@ -86,6 +86,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.5.5"
+  graphs:
+    dependency: transitive
+    description:
+      name: graphs
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.0"
   http:
     dependency: "direct main"
     description:
@@ -135,6 +142,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
+  my_package:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: main
+      resolved-ref: "8c849bbe9037931fbd9b014120ee599440e319d9"
+      url: "https://github.com/cerovacad/my_package.git"
+    source: git
+    version: "0.0.1"
   nested:
     dependency: transitive
     description:
@@ -163,6 +179,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.0.1"
+  rive:
+    dependency: "direct main"
+    description:
+      name: rive
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.7.33"
   sky_engine:
     dependency: transitive
     description: flutter
